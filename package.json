@@ -1,0 +1,13 @@
+{
+    "name": "PaymentPlugin",
+    "main": "PaymentPlugin.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AssistOS-AI/PaymentPlugin.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/AssistOS-AI/PaymentPlugin.git"
+    },
+    "homepage": "https://github.com/AssistOS-AI/PaymentPlugin.git#readme"
+}
