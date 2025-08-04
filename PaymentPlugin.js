@@ -29,7 +29,10 @@ async function PaymentPlugin() {
             if (userStatus.role === constants.ROLES.USER) {
                 userStatus.role = constants.ROLES.VALIDATED_USER;
                 await persistence.updateUserLoginStatus(user.email, userStatus);
-                await userLogger.userLog(userStatus.globalUserId, `Role changed from ${constants.ROLES.USER} to ${constants.ROLES.VALIDATED_USER}`);
+                await userLogger.userLog(userStatus.globalUserId, `Role changed from ${constants.ROLES.USER} to ${constants.ROLES.VALIDATED_USER}`,{
+                    type: "settings",
+                    action: "change_role"
+                });
             }
 
             return purchasedPoints
